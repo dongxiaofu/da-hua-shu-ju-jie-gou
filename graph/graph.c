@@ -16,10 +16,11 @@ void CreateMGraph(MGraph *G) {
     for (int i = 0; i < G->numVertexes; i++) {
         printf("输入顶点:");
         char c;
-        scanf("%c", &G->vexs[i]);           // todo 不符合意图，会接收上一个输入的\n
-        printf("g:%d", G->vexs[i]);
-//        scanf("%c%c", &G->vexs[i], &c);
+//        scanf("%c", &G->vexs[i]);           // todo 不符合意图，会接收上一个输入的\n
+//        printf("g:%d", G->vexs[i]);
+        scanf("%c%c", &G->vexs[i], &c);
     }
+    // 初始化矩阵
     for (int i = 0; i < G->numVertexes; i++) {
         for (int j = 0; j < G->numVertexes; j++) {
             G->arc[i][j] = INFINITY;

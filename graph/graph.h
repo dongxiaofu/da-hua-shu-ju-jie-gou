@@ -12,8 +12,8 @@ typedef int EdgeType;
 #define INFINITY 65535
 
 typedef struct{
-    VertextType vexs[MAX_VALUE];
-    EdgeType arc[MAX_VALUE][MAX_VALUE];
+    VertextType vexs[MAX_VALUE];        // 顶点
+    EdgeType arc[MAX_VALUE][MAX_VALUE]; // 边
     int numVertexes,numEdges;
 }MGraph;
 
